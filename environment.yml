@@ -1,0 +1,9 @@
+name: m2r-zeta
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - sage
+  - matplotlib
+  - seaborn
+  - plotly
