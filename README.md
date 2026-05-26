@@ -16,7 +16,7 @@ If you don't already have conda, install Miniconda from
 
 Inside a terminal navigate to where you would like to place the project and run the following.
 ```bash
-git clone <repo-url>
+git clone https://github.com/smmercuri/M2R_zeta.git
 cd M2R_zeta
 ```
 
