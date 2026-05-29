@@ -24,7 +24,7 @@ def bernoulli_term(k, N, s):
 def bernoulli_sum(N, s, v):
     return sum(bernoulli_term(k, N, s) for k in range(1, v))
 
-def zeta_euler_maclaurin(s, N=100, v=10):
+def zeta_euler_maclaurin(s, N, v):
     return (
         partial_zeta(s, N)
         + integral_term(s, N)
