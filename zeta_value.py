@@ -22,7 +22,7 @@ def bernoulli_term(k, N, s):
     return (B2k / factorial_2k) * deriv_at_N
 
 def bernoulli_sum(N, s, v):
-    return sum(bernoulli_term(k, N, s) for k in range(1, v))
+    return sum(bernoulli_term(k, N, s) for k in range(1, v + 1))
 
 def zeta_euler_maclaurin(s, N, v):
     return (
