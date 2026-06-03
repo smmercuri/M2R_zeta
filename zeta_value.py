@@ -7,7 +7,7 @@ def partial_zeta(s, N):
 
 
 def zeta_integral_term(s, N):
-    return N ** (1 - s) / (s - 1)
+    return N ** (QQ(1) - s) / (s - QQ(1))
 
 
 def zeta_correction_term(s, N):

@@ -3,8 +3,7 @@ import numpy as np
 
 
 def gamma_integral_term(s):
-    return (s - 1/2)*log(s-1)
-
+    return (s - 1 / 2) * log(s - 1)
 
 def gamma_correction_term(s):
     return -s + 1
@@ -31,4 +30,3 @@ def log_gamma_euler_maclaurin(s, v):
 
 def gamma_euler_maclaurin(s, v):
     return exp(log_gamma_euler_maclaurin(s, v))
-
