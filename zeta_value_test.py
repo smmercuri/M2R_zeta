@@ -12,3 +12,4 @@ if __name__ == "__main__":
     print(zeta_euler_maclaurin(2, 10, 86))
     print(zeta_euler_maclaurin(2, 10, 88))
     print(zeta_euler_maclaurin(2, 10, 90))
+
