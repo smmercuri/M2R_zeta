@@ -3,11 +3,11 @@ import numpy as np
 
 
 def partial_zeta(s, N):
-    return sum(n ** (-s) for n in range(1, N))
+    return sum(QQ(n) ** (-s) for n in range(1, N))
 
 
 def zeta_integral_term(s, N):
-    return N ** (QQ(1) - s) / (s - QQ(1))
+    return QQ(N) ** (1 - s) / (s - 1)
 
 
 def zeta_correction_term(s, N):
