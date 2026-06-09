@@ -11,6 +11,7 @@ def gamma_correction_term(s):
 def gamma_shifting_factor():
     return (1 / 2) * log(2*pi)
 
+
 def gamma_bernoulli_term(k, s):
     return bernoulli(2 * k) / (2 * k * (2 * k - 1) * (s - 1) ** (2 * k -1))
 
