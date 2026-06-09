@@ -3,7 +3,7 @@ import numpy as np
 
 
 def partial_zeta(s, N):
-    return sum(QQ(n) ** (-s) for n in range(1, N))
+    return sum(QQ(n) ** (-s) for n in range(1, N + 1))
 
 
 def zeta_integral_term(s, N):
@@ -12,7 +12,6 @@ def zeta_integral_term(s, N):
 
 def zeta_correction_term(s, N):
     return QQ(1) / (2 * N**s)
-
 
 
 def zeta_bernoulli_term_diff(k, N, s):
