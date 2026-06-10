@@ -2,6 +2,9 @@ from sage.all import *
 import numpy as np
 
 
+def partial_log_gamma(s, N):
+    return -sum(log(s - 1 + i) for i in range(1, N))
+
 def gamma_integral_term(s):
     return (s - 1 / 2) * log(s - 1)
 
