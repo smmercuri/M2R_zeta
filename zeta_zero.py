@@ -4,13 +4,9 @@ from zeta_value import zeta_euler_maclaurin
 import numpy as np
 
 
-def partial_log_gamma(s, N):
-    return -sum(log(s - 1 + i) for i in range(1, N + 1))
-
-
 def theta(t, N, v):
     s = (1 + 2 * i * t) / 4
-    log_gamma_approx = log_gamma_euler_maclaurin(s + N, v) + partial_log_gamma(s, N)
+    log_gamma_approx = log_gamma_euler_maclaurin(s, N, v)
     return imag_part(log_gamma_approx) - t / 2 * log(pi)
 
 
@@ -52,7 +48,12 @@ def find_zeros(T, M, N, v, C, d):
     return zeros
 
 if __name__ == "__main__":
-       output = find_zeros(50, 10, 10, 30, 15, 10)
-       print(len(output))
-       for t in output:
-           print(f"1/2 + i{t}")
+    K = 3
+    T = 50
+    M = 4
+    N = K * T / 2 * pi
+    v = floor(pi * N)
+    output = find_zeros(50, 4, 20, 60, 15, 10)
+    print(len(output))
+    for t in output:
+        print(f"1/2 + i{t}")
