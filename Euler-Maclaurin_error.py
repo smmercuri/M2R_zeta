@@ -21,10 +21,10 @@ plt.ylabel("absolute error |EM approx - pi^2/6|")
 plt.title("Euler-Maclaurin approximation of zeta(2)")
 plt.legend()
 plt.grid(True)
-plt.savefig("euler_maclaurin_divergence.png", dpi=150)
+plt.savefig("out/euler_maclaurin_divergence.png", dpi=150)
 plt.show()
 
-with open("euler_maclaurin_tables.txt", "w") as f:
+with open("out/euler_maclaurin_tables.txt", "w") as f:
     for N in [4, 6, 9, 13, 19, 26]:
         v_range = range(1, 8 * N)
         f.write(f"N = {N}\n")
