@@ -34,4 +34,3 @@ def log_gamma_euler_maclaurin(s, N, v):
 
 def gamma_euler_maclaurin(s, N, v):
     return exp(log_gamma_euler_maclaurin(s, N, v))
-
