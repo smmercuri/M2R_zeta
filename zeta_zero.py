@@ -47,13 +47,5 @@ def find_zeros(T, M, N, v, C, d):
             zeros.append((t1, t2))
     return zeros
 
-if __name__ == "__main__":
-    K = 3
-    T = 50
-    M = 4
-    N = K * T / 2 * pi
-    v = floor(pi * N)
-    output = find_zeros(50, 4, 20, 60, 15, 10)
-    print(len(output))
-    for t in output:
-        print(f"1/2 + i{t}")
+def zeros(intervals):
+    return [1/2 + i * (t0 + t1)/2 for t0, t1 in intervals]
