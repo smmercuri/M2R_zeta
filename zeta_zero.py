@@ -7,6 +7,7 @@ import numpy as np
 def theta(t, N, v):
     s = (1 + 2 * i * t) / 4
     log_gamma_approx = log_gamma_euler_maclaurin(s, N, v)
+    log_gamma_approx = log_gamma_euler_maclaurin(s, N, v)
     return imag_part(log_gamma_approx) - t / 2 * log(pi)
 
 
